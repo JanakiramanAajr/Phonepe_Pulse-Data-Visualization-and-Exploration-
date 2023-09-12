@@ -272,8 +272,8 @@ if selected == "Explore Data":
         )
         st.plotly_chart(fig.update_geos(fitbounds="locations", visible=False))
     with tab2:
-        st.write('Total Register Users:', (sum(df1['Register_users'])))
-        st.write('Total App Opens:', (sum(df1['App_opens'])))
+        st.write('Total Register Users:', (sum(df2['Register_users'])))
+        st.write('Total App Opens:', (sum(df2['App_opens'])))
         fig = px.choropleth(
             df2,
             geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
